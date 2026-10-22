@@ -9,7 +9,7 @@ bibliotecas, bancos de dados, escudos ou outros materiais de terceiros.
 O jogo original não é distribuído neste repositório; cada usuário precisa
 fornecer seu próprio instalador compatível.
 
-As fotografias e imagens de taças na raiz, suas versões preparadas em
+A imagem de taça na raiz, as versões preparadas em
 `mod/assets/trophies/` e as capturas do jogo em `docs/images/` ilustram ou
 integram o patch, mas não são relicenciadas sob GPL. Seus direitos pertencem
 aos respectivos titulares. A preparação das imagens é descrita em

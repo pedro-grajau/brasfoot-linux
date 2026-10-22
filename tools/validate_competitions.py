@@ -31,7 +31,8 @@ def main():
     world = config["club_world_cup"]
     annual = config["intercontinental_cup"]
     bootstrap = read(world["first_edition_seeds"])
-    assets = read("trophies.json")["trophies"]
+    asset_config = read("trophies.json")
+    assets = asset_config["trophies"]
     rewards = read("rewards.json")
     trophy_ids = [item["id"] for item in assets]
     require(len(trophy_ids) == len(set(trophy_ids)), "Taças com IDs repetidos")
@@ -47,7 +48,7 @@ def main():
         require(len(rewards[name])==count and all(type(n) is int and 0<=n<=2147483647 for n in rewards[name]),f"Prêmios inválidos: {name}")
     require(all(type(n) is int and 0<n<=2147483647 for n in rewards["participation"].values()),"Prêmio de participação inválido")
     for trophy in assets:
-        p = local_path(ROOT, trophy["file"])
+        p = local_path(ROOT, str(Path(asset_config["asset_base"]) / trophy["file"]))
         require(p.stat().st_size == trophy["bytes"], f"Tamanho alterado: {p.name}")
         require(hashlib.sha256(p.read_bytes()).hexdigest() == trophy["sha256"],
                 f"Imagem alterada: {p.name}")
@@ -163,7 +164,7 @@ def main():
     print(f"Mundial 2025: {len(seed_files)} vagas iniciais; {32 - len(seed_files)} a preencher na carreira.")
     print("OK: formato de 32 clubes e 63 jogos; Intercontinental com seis clubes e cinco jogos.")
     print("OK: chaveamento validado em 2024/2025; quatro títulos distintos.")
-    print("OK: cinco imagens originais presentes e íntegras.")
+    print("OK: cinco PNGs tratados presentes e íntegros.")
     print("OK: premiações de participação/avanço e ranking das cinco competições.")
     print("Estado: dados validados. Use tools/test_mod.py para verificar a integração ao jogo.")
 

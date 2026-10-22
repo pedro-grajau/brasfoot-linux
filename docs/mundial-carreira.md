@@ -154,15 +154,16 @@ jogadores registrados pelo jogo; cartões de comissão técnica não são modela
 
 ## Taças e telas
 
-| Título | Imagem original |
+| Título | PNG em `mod/assets/trophies/` |
 |---|---|
-| Mundial de Clubes | `Club_World_Cup_Trophy.png` |
-| Intercontinental | `intercontinental_cup.jpeg` |
-| África–Ásia–Pacífico | `africa_asia_pacific.jpg` |
-| Derby das Américas | `derby_of_americas.jpg` |
-| Challenger Cup | `challenger_cup.jpg` |
+| Mundial de Clubes | `club_world_cup.png` |
+| Intercontinental | `intercontinental_cup.png` |
+| África–Ásia–Pacífico | `africa_asia_pacific.png` |
+| Derby das Américas | `derby_of_americas.png` |
+| Challenger Cup | `challenger_cup.png` |
 
-Os arquivos originais são preservados. O build usa as versões PNG de
+As fotografias JPEG usadas como referência foram removidas da raiz.
+A validação e o build usam somente as versões PNG de
 `mod/assets/trophies/`: o Mundial já tinha transparência; as outras quatro taças
 receberam recortes com fundo transparente pela ferramenta integrada de imagens.
 Os prompts e hashes estão em `mod/assets/trophies/provenance.json`.

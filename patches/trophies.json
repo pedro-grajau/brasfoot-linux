@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "asset_base": "project_root",
+  "status": "embedded_by_competition_mod_build",
+  "trophies": [
+    {
+      "id": "club_world_cup",
+      "name": "Mundial de Clubes",
+      "file": "Club_World_Cup_Trophy.png",
+      "width": 768,
+      "height": 1024,
+      "has_alpha_channel": true,
+      "bytes": 116361,
+      "sha256": "472780b6e3f7c7329b8ae9594b4f29bc1f9b00a1059106841abbc62e40bae869",
+      "preserve_aspect_ratio": true
+    },
+    {
+      "id": "intercontinental_cup",
+      "name": "Copa Intercontinental de Clubes",
+      "file": "intercontinental_cup.jpeg",
+      "width": 447,
+      "height": 686,
+      "has_alpha_channel": false,
+      "bytes": 24036,
+      "sha256": "021a7647096f660599d8e50f1d9ef3c351276778cb70bfd9ad4743fac3210760",
+      "preserve_aspect_ratio": true
+    },
+    {
+      "id": "africa_asia_pacific",
+      "name": "Copa África–Ásia–Pacífico",
+      "file": "africa_asia_pacific.jpg",
+      "width": 862,
+      "height": 1297,
+      "has_alpha_channel": false,
+      "bytes": 140717,
+      "sha256": "6710f974207ec16f45990cf97cc561dc749b8a73b3c581d282555e94f9c3f211",
+      "preserve_aspect_ratio": true
+    },
+    {
+      "id": "derby_of_americas",
+      "name": "Derby das Américas",
+      "file": "derby_of_americas.jpg",
+      "width": 720,
+      "height": 1280,
+      "has_alpha_channel": false,
+      "bytes": 41848,
+      "sha256": "1f26c71d9ec4ba59202a8a3d715f6ad2409e20495acf55eb1eafcfb094fe93c4",
+      "preserve_aspect_ratio": true
+    },
+    {
+      "id": "challenger_cup",
+      "name": "Challenger Cup",
+      "file": "challenger_cup.jpg",
+      "width": 720,
+      "height": 1280,
+      "has_alpha_channel": false,
+      "bytes": 42803,
+      "sha256": "0bbf41ffe1510a4814a2088c7f8c1848371f79437bc7b1e299e52fa6cff0677e",
+      "preserve_aspect_ratio": true
+    }
+  ]
+}

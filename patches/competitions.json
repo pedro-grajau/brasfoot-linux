@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "runtime_status": "integrated_beta",
+  "legacy_annual_world_cup": {
+    "last_year": 2023,
+    "preserve_historical_titles": true,
+    "rename_historical_titles": false,
+    "replaced_by": "intercontinental_cup",
+    "replacement_first_year": 2024
+  },
+  "club_world_cup": {
+    "id": "club_world_cup_32",
+    "name": "Mundial de Clubes",
+    "first_year": 2025,
+    "interval_years": 4,
+    "participants": 32,
+    "qualification_cycle_years": 4,
+    "exclude_edition_year_from_qualification": true,
+    "first_edition_seeds": "world-cup-2025-seeds.json",
+    "repeat_historical_seeds_after_first_edition": false,
+    "slots": {
+      "UEFA": 12,
+      "CONMEBOL": 6,
+      "AFC": 4,
+      "CAF": 4,
+      "CONCACAF": 4,
+      "OFC": 1,
+      "HOST": 1
+    },
+    "country_limit": 2,
+    "country_limit_exception": "continental_champions",
+    "champion_duplicate_policy": "fill_vacancy_via_confederation_ranking",
+    "ofc_pathway": "best_ranked_continental_champion_in_cycle",
+    "ranking": {
+      "status": "career_ledger_integrated",
+      "new_careers": "match_points_and_stage_progression",
+      "legacy_careers": "available_aggregated_wins_and_draws_only",
+      "historical_2021_points": null,
+      "invent_missing_historical_match_scores": false,
+      "reputation_fallback": false
+    },
+    "host_selection": {
+      "status": "implemented_career_adaptation",
+      "country": "USA",
+      "brasfoot_country_id": 68,
+      "future_editions": "same_host",
+      "selection": "previous_season_national_champion_or_available_continental_ranking",
+      "allow_duplicate_club": false
+    },
+    "group_stage": {
+      "groups": 8,
+      "clubs_per_group": 4,
+      "rounds": 3,
+      "legs": 1,
+      "qualifiers_per_group": 2,
+      "matches": 48,
+      "tiebreaker_status": "head_to_head_reapplied_overall_goals_native_player_fair_play_seeded_lots"
+    },
+    "knockout_stage": {
+      "round_sizes": [16, 8, 4, 2],
+      "legs": 1,
+      "third_place_match": false,
+      "matches": 15
+    },
+    "total_matches": 63,
+    "trophy": "club_world_cup",
+    "qualification_sources": [
+      "https://www.fifa.com/pt/tournaments/mens/club-world-cup/usa-2025/articles/classificacao-mundial-2025"
+    ]
+  },
+  "intercontinental_cup": {
+    "id": "intercontinental_cup",
+    "name": "Copa Intercontinental de Clubes",
+    "first_year": 2024,
+    "interval_years": 1,
+    "participants": 6,
+    "qualification": "current_season_continental_champions",
+    "seed_from_world_cup_bootstrap": false,
+    "host_slot": false,
+    "legs": 1,
+    "third_place_match": false,
+    "total_matches": 5,
+    "afc_caf_rotation": {
+      "mode": "alternate_annually",
+      "anchor_year": 2024,
+      "opening_confederation_in_anchor_year": "AFC",
+      "other_confederation": "CAF"
+    },
+    "rounds": [
+      {
+        "id": "africa_asia_pacific_playoff",
+        "entrants": ["champion:opening_afc_or_caf", "champion:OFC"],
+        "title": null
+      },
+      {
+        "id": "africa_asia_pacific_final",
+        "entrants": ["champion:remaining_afc_or_caf", "winner:africa_asia_pacific_playoff"],
+        "title": "africa_asia_pacific"
+      },
+      {
+        "id": "derby_of_americas",
+        "entrants": ["champion:CONMEBOL", "champion:CONCACAF"],
+        "title": "derby_of_americas"
+      },
+      {
+        "id": "challenger_cup",
+        "entrants": ["winner:africa_asia_pacific_final", "winner:derby_of_americas"],
+        "title": "challenger_cup"
+      },
+      {
+        "id": "intercontinental_final",
+        "entrants": ["champion:UEFA", "winner:challenger_cup"],
+        "title": "intercontinental_cup"
+      }
+    ],
+    "title_awards": {
+      "allow_multiple_titles_per_club_per_edition": true,
+      "separate_from_world_cup_title": true
+    },
+    "sources": [
+      "https://www.fifa.com/en/tournaments/mens/intercontinentalcup/2024",
+      "https://www.fifa.com/en/tournaments/mens/fifa-club-world-cup/articles/fifa-council-confirms-key-details-club-world-cup-2025",
+      "https://vod.fifa.com/organisation/news/intercontinental-cup-2025-dates-venues-first-match-ups-confirmed"
+    ]
+  }
+}

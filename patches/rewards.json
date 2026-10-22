@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "currency": "brasfoot_game_currency",
+  "basis": "Adaptacao a economia e ao ranking do Brasfoot; nao sao valores reais da FIFA.",
+  "participation": {"club_world_cup": 2000000, "intercontinental_cup": 500000},
+  "world_knockout_winner": [2000000, 2000000, 5000000, 7000000],
+  "intercontinental_match_winner": [500000, 1000000, 1000000, 2000000, 7000000],
+  "club_placement_points": {
+    "club_world_cup": [25,15,8,8,4,4,4,4,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+    "intercontinental_cup": [10,5,3,3,1,1],
+    "africa_asia_pacific": [3,1,0],
+    "derby_of_americas": [3,1],
+    "challenger_cup": [3,1]
+  },
+  "coach_placement_points": {
+    "club_world_cup": [40,20,10,10,5,5,5,5,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+    "intercontinental_cup": [25,5,3,3,1,1],
+    "africa_asia_pacific": [10,3,0],
+    "derby_of_americas": [10,3],
+    "challenger_cup": [10,3]
+  },
+  "retroactive_cash": "only_entry_fee_for_editions_still_in_progress",
+  "retroactive_ranking": "recorded_completed_editions_with_native_points_deducted",
+  "world_qualification_coefficient": "unchanged_continental_results_only"
+}

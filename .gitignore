@@ -1,0 +1,24 @@
+# Jogo original e binários gerados
+*.exe
+*.jar
+*.class
+/artifacts/
+/tools/vendor/
+
+# Dados e resultados locais
+/runtime/
+/analysis/
+*.s22
+*.log
+__pycache__/
+*.pyc
+.venv/
+/Captura de tela*.png
+
+# Configurações da estação de trabalho
+/.agents/
+/.aws/
+/.codex/
+.env
+.env.*
+.DS_Store

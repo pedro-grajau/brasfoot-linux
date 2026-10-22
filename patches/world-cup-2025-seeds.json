@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "edition_year": 2025,
+  "historical_year": 2021,
+  "scope": "bootstrap_first_edition_only",
+  "career_result_years": [2022, 2023, 2024],
+  "qualification_cycle": [2021, 2022, 2023, 2024],
+  "duplicates": "one_entry_per_club_keep_all_qualification_reasons",
+  "historical_scores": null,
+  "seeds": [
+    {
+      "club": "Chelsea",
+      "country": "ENG",
+      "confederation": "UEFA",
+      "team_file": "teams/chelsea.ban",
+      "reason": "continental_champion",
+      "title_year": 2021,
+      "source_id": "fifa_2021_champions"
+    },
+    {
+      "club": "Palmeiras",
+      "country": "BRA",
+      "confederation": "CONMEBOL",
+      "team_file": "teams/palmeiras.ban",
+      "reason": "continental_champion",
+      "title_year": 2021,
+      "source_id": "fifa_2021_champions"
+    },
+    {
+      "club": "Al Hilal",
+      "country": "KSA",
+      "confederation": "AFC",
+      "team_file": "teams/al_hilal.ban",
+      "reason": "continental_champion",
+      "title_year": 2021,
+      "source_id": "fifa_2021_champions"
+    },
+    {
+      "club": "Al Ahly",
+      "country": "EGY",
+      "confederation": "CAF",
+      "team_file": "teams/alahly_egi.ban",
+      "reason": "continental_champion",
+      "title_year": 2021,
+      "source_id": "fifa_2021_champions"
+    },
+    {
+      "club": "Monterrey",
+      "country": "MEX",
+      "confederation": "CONCACAF",
+      "team_file": "teams/monterrey_mex.ban",
+      "reason": "continental_champion",
+      "title_year": 2021,
+      "source_id": "fifa_2021_champions"
+    }
+  ],
+  "ofc_2021": {
+    "status": "cancelled_no_champion",
+    "seed": null,
+    "qualification": "best_ranked_career_ofc_champion_2022_to_2024",
+    "source_id": "fifa_ofc_2021_cancelled"
+  },
+  "sources": {
+    "fifa_2021_champions": "https://publications.fifa.com/en/annual-report-2022/2022-at-a-glance/fifa-club-world-cup-2021/",
+    "fifa_ofc_2021_cancelled": "https://inside.fifa.com/tournaments/mens/clubworldcup/uae2021/media-releases/fifa-club-world-cup-uae-2021-draw-to-take-place-29-november"
+  }
+}

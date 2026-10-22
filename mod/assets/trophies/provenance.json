@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "originals_preserved": true,
+  "tool": "built-in image_gen (four edited images); original transparent Mundial PNG retained",
+  "prompt_template": "Remove the entire background and display pedestal. Isolate the full trophy including its own base. Preserve trophy identity, proportions, materials, globe colors and details. Upright, centered, tightly framed with genuine alpha transparency including the openings between pillars. No added shadow, backdrop, caption, other objects or watermark.",
+  "runtime_sizes": {
+    "selector": [
+      20,
+      20
+    ],
+    "gallery": [
+      84,
+      124
+    ]
+  },
+  "assets": [
+    {
+      "id": "africa_asia_pacific",
+      "file": "africa_asia_pacific.png",
+      "sha256": "5d27ee45c11cd0ae93b789284364654a5ea4896b5b9f9dd09696486f1056c3a1",
+      "source": "built-in image_gen; transparent cutout derived from user photograph"
+    },
+    {
+      "id": "challenger_cup",
+      "file": "challenger_cup.png",
+      "sha256": "a8c8942a31c57333aad4880c2ee39a00d04febac0c03e65ad8c7415b43a9922d",
+      "source": "built-in image_gen; transparent cutout derived from user photograph"
+    },
+    {
+      "id": "club_world_cup",
+      "file": "club_world_cup.png",
+      "sha256": "472780b6e3f7c7329b8ae9594b4f29bc1f9b00a1059106841abbc62e40bae869",
+      "source": "original transparent PNG"
+    },
+    {
+      "id": "derby_of_americas",
+      "file": "derby_of_americas.png",
+      "sha256": "dcf6cc372523ba07d31c07fac16c3bc95efee668262cd51b608da7679f022f28",
+      "source": "built-in image_gen; transparent cutout derived from user photograph"
+    },
+    {
+      "id": "intercontinental_cup",
+      "file": "intercontinental_cup.png",
+      "sha256": "fb9e4c6c77281ca9ef3bb79aa138c77049868535f842977aa00cd2981f55e571",
+      "source": "built-in image_gen; transparent cutout derived from user photograph"
+    }
+  ]
+}
